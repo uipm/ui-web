@@ -1,0 +1,66 @@
+/* Vị trí */
+.absolute { position: absolute; }
+.relative { position: relative; }
+.inset-y-0 { top: 0; bottom: 0; }
+.right-2 { right: 0.5rem; }
+
+/* Kích thước */
+.w-full { width: 100%; }
+.min-w-full { min-width: 100%; }
+.w-4 { width: 1rem; }
+.h-4 { height: 1rem; }
+.max-h-80 { max-height: 20rem; }
+
+/* Padding & Margin */
+.px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.p-2 { padding: 0.5rem; }
+.mt-1 { margin-top: 0.25rem; }
+
+/* Border */
+.border { border-width: 1px; }
+.border-gray-300 { border-color: #d1d5db; }
+.rounded { border-radius: 0.375rem; }
+
+/* Shadow */
+.shadow { box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); }
+
+/* Màu nền và chữ */
+.bg-white { background-color: #ffffff; }
+.bg-blue-100 { background-color: #dbeafe; }
+.text-gray-500 { color: #6b7280; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+
+/* Text */
+.text-left { text-align: left; }
+.font-medium { font-weight: 500; }
+
+/* Flex */
+.flex { display: flex; }
+.items-center { align-items: center; }
+
+/* Cursor */
+.cursor-pointer { cursor: pointer; }
+
+/* Pointer */
+.pointer-events-none { pointer-events: none; }
+
+/* Z-index */
+.z-10 { z-index: 10; }
+
+/* Focus states (phải dùng thêm selector) */
+.focus\:outline-none:focus { outline: none; }
+.focus\:ring-2:focus {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+.focus\:ring-blue-500:focus {
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+/* Hover states */
+.hover\:bg-blue-100:hover {
+  background-color: #bfdbfe;
+}
+
+/* Overflow */
+.overflow-auto { overflow: auto; }

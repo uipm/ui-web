@@ -1,0 +1,21 @@
+{
+  "name": "ui-web",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "styles":"dist/ui-web.css",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["Dashboard UI","UI","react","UI Elements","ui.pro.vn","nextjs","web application"],
+  "author": "uipm",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}
