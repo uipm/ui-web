@@ -9,7 +9,15 @@
   },
   "keywords": ["Dashboard UI","UI","react","UI Elements","ui.pro.vn","nextjs","web application"],
   "author": "uipm",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uipm/ui-web.git"
+  },
+  "homepage": "https://ui.pro.vn/ui-web",
+  "bugs": {
+    "url": "https://github.com/uipm/ui-web/issues"
+  },
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@types/react": "^19.1.8",
