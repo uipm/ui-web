@@ -1,7 +1,7 @@
-import { SizeType } from "ui-web/_common/helper";
+import { SizeType } from "../_common/helper";
 
 export type IAvatarProps = {
-    type
+    type:any
     size?: SizeType
     alt?: string;
     src:string,

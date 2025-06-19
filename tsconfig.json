@@ -1,14 +1,25 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "dist",
-    "declaration": true,
+    "rootDir": "src", // nơi source TS/TSX
+    "outDir": "dist", // build ra đây
+    "declaration": true, // tạo .d.ts
+    "declarationMap": true,
+    "declarationDir": "dist", // định vị .d.ts
     "jsx": "react-jsx",
     "module": "ESNext",
     "target": "ES5",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "strict": true
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
 }
