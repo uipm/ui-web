@@ -7,7 +7,7 @@
     "declarationDir": "dist", // định vị .d.ts
     "jsx": "react-jsx",
     "module": "ESNext",
-    "target": "ES5",
+    "target": "ESNext",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
