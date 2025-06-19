@@ -1,5 +1,5 @@
 {
-  "name": "ui-web",
+  "name": "@uipm/ui-web",
   "version": "0.0.1",
   "files": [
     "dist"
@@ -21,7 +21,10 @@
     "nextjs",
     "web application"
   ],
-  "author": "hducit",
+  "author": "uipm",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/uipm/ui-web.git"
