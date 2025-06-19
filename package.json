@@ -9,8 +9,8 @@
   "styles": "dist/index.css",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && tsc && npm run build:css",
-    "build:css": "postcss src/index.css -o dist/index.css"
+    "build": "tsc && postcss src/index.css -o dist/index.css",
+    "watch": "tsc -w"
   },
   "keywords": [
     "Dashboard UI",
@@ -43,6 +43,7 @@
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1",
+    "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.10",
     "typescript": "^5.8.3"
   },

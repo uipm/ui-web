@@ -19,7 +19,7 @@ type Props<T> = {
   searchType?: "start" | "include" | "end"
 };
 
-export default function TableAutocomplete<T extends Record<string, any>>({
+export function TableAutocomplete<T extends Record<string, any>>({
   columns,
   data,
   value,

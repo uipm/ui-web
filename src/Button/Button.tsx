@@ -1,19 +1,30 @@
-// type IButtonProps = {
-//   label: string;
-//   className?: string
-//   onClick?: (e: any) => void
-// }
+import * as React from 'react';
 
-// export const Button = ({ label, className, onClick }: IButtonProps) => {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'primary' | 'secondary';
+  children?: React.ReactNode;
+}
 
-//   return (
-//     // <button className={` ${className}`}
-//     //   >
-//     //   {label}
-//     // </button>
-//     <button type="button" className="ti-btn ti-btn-ghost-primary btn-wave  waves-effect waves-light">Primary</button>
-//   );
-// }
+export const Button = (props: ButtonProps) => {
+  const {
+    variant = 'primary',
+    children,
+    className = '',
+    ...rest
+  } = props;
 
+  const classes = [
+    'ti-btn',
+    'btn-wave',
+    'waves-effect',
+    'waves-light',
+    variant === 'primary' ? 'ti-btn-ghost-primary' : 'ti-btn-ghost-secondary',
+    className
+  ].join(' ');
 
-export const Button =()=>(<button type="button" className="ti-btn ti-btn-ghost-primary btn-wave  waves-effect waves-light">Primary</button>)
+  return (
+    <button type="button" className={classes} {...rest}>
+      {children}
+    </button>
+  );
+};
